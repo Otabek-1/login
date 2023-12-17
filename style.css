@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    width: auto;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+::selection{
+    background-color: green;
+    color: black;
+}
+::placeholder{
+    color: green;
+}
+.field{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    border: 2px solid darkgreen;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.522);
+    box-shadow: 0px 0px 10px green;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title{
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+    padding: 25px 0px ;
+    font-size: 30px;
+}
+.inputted{
+    width: 350px;
+    height: 20px;
+    font-size: 15px;
+    border-bottom:2px solid green;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: none;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inputted:focus{
+    border-bottom:2px solid green;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.labels{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color: none;
+    text-decoration: none;
+}
+.submit{
+    color: green;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:500;
+    transition: .3s;
+    padding: 0px 100px;
+}
+.submit:hover{
+    text-shadow: 0px 0px 10px green;
+    border-bottom: 2px solid green;
+}
+.forgot{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    transition: .1s;
+}
+.forgot:hover{
+    text-shadow: 0px 0px 10px green;
+}
+.about{
+    color: green;
+    padding-top:40px ;
+    font-family: 'Courier New', Courier, monospace;
+}
+.next{
+    display: none;
+    text-align: center;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+.pswf{
+    color: green;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px 0px;
+}
+.pswf:hover{
+    text-shadow: 0px 0px 10px green;
+}
+.notFound{
+    display: none;
+    color: green;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.not{
+    padding: 50px 0px;
+}
+
+.aboutme{
+    display: none;
+     flex-direction: column;
+     
+     align-items: center;
+     text-align: left;
+     color: green;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 30px;
+}
+.bio{
+    padding: 15px 15px;
+    font-size: 20px;
+}
+.name{
+    font-weight: 800;
+}
+.back{
+    color: green;
+}

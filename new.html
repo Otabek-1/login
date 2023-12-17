@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 style="color: green; font-size: 25px; font-family: 'Courier New', Courier, monospace;" id="tabriklation">
+        
+        </h1>
+        <fieldset class="field" id="main">
+            <h3 class="title">Log in</h3>
+
+            <label for="uname" class="labels">Username:</label>
+            <input type="text" name="uname" id="uname" class="inputted" placeholder="Enter here...">
+            <br><br><br>
+            <label for="psw" class="labels">Password:</label>
+            <input type="password" name="psw" id="psw" class="inputted" placeholder="Enter here...">
+            <br><br><br><br>
+            <a href="#!" class="submit">Enter</a>
+            <br><br><br>
+            <a href="#!" class="forgot" onclick="Forgotted()">Forgot password</a>
+
+            <p class="about">&copy Copyright 2023 by <a href="#!" style="font-weight: 500;" onclick="Aboutme()">Hacker
+                    F*cker</a></p>
+        </fieldset>
+        <fieldset class="field next" id="next">
+            <p style="font-size: 30px; font-weight: 500; padding: 30px 0px ;">If you've forgotten password...</p>
+            <p>Karochi parolingni esla eslolmasang yana esla. Agar esinga tushsa <label for="found"
+                    style="font-weight: 700;">Esladim</label>, aks holda <label for="not-found"
+                    style="font-weight: 700;">Eslolmadim</label> yozuvini bos. </p>
+
+            <a href="#!" class="pswf" id="found" name="found" onclick="Found()">Esladim</a>
+            <a href="#!" class="pswf" id="not-found" onclick="NotFound()">Eslolmadim</a>
+        </fieldset>
+        <fieldset class="field notFound" id="notfound">
+            <p class="not">Unda esla-da keyin qaytib kel :)</p>
+        </fieldset>
+        <fieldset class="field aboutme" id="about">
+            <p class="bio"><span class="name">Hacker F*cker</span> - <br> Original name:****** <br> 
+                Surname:*********, <br>
+                Birthday date : **:**:****, <br>
+                Adress: ******** ****, **** *******, **-**, <br><br>
+                <span class="name">Contact:</span> <br>
+                Phone number: +**(***)******* <br>
+                Email:***************@gmail.com <br>
+            </p>
+            <a href="#!" class="back" onclick="back()">Back</a>
+        </fieldset>
+    </main>
+
+    <script>
+        let main = document.getElementById("main");
+        let next = document.getElementById("next");
+        let found = document.getElementById("found");
+        let n_found = document.getElementById("not-found");
+        let t = document.getElementById("tabriklation");
+        let notfound = document.getElementById("notfound");
+        let aboutme = document.getElementById("about");
+        function Forgotted() {
+            main.style.display = "none";
+            next.style.display = "flex";
+            if (t.innerHTML == "Miyyang ishlab qolgani bilan tabriklayman :)") {
+                t.innerHTML = "Haa so`tak barbir eslolmadinmi";
+            } else {
+                t.innerHTML = "";
+            }
+        }
+        function Found() {
+            main.style.display = "flex";
+            next.style.display = "none";
+            t.innerHTML = "Miyyang ishlab qolgani bilan tabriklayman :)";
+        }
+        function NotFound() {
+            main.style.display = "none";
+            next.style.display = "none";
+            notfound.style.display = "flex";
+            t.innerHTML = " ";
+        }
+        function Aboutme() {
+            main.style.display = "none";
+            aboutme.style.display = "flex";
+        }
+        function back(){
+            main.style.display = "flex";
+            aboutme.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
